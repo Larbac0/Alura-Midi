@@ -6,7 +6,17 @@
   --luz: rgb(229, 255, 0);
 }
 
-body {
+.cabecalho{
+  position: fixed;
+  width: 100%;
+  background-color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+main {
   align-items: center;
   background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
   display: flex;
@@ -16,10 +26,18 @@ body {
   min-height: 100vh;
 }
 
+
 h1 {
   color: var(--branca);
-  margin-bottom: 20px;
   font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.link{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .teclado {
@@ -30,6 +48,11 @@ h1 {
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
+}
+
+.teclado__piano .tecla:last-child{
+  grid-column: 2 / 3;
+  justify-content: center;
 }
 
 .tecla {
