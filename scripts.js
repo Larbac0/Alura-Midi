@@ -1,4 +1,4 @@
-alert('Alura midi é um projeto fictício para desenvolvimento pessoal e estudos');
+alert('Alura Teclados é um projeto fictício para desenvolvimento pessoal e estudos');
 
 function tocaSom (seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
