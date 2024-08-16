@@ -1,4 +1,4 @@
-alert('Alura Teclados é um projeto fictício para desenvolvimento pessoal e estudos');
+alert('SoftWave Teclados é um projeto fictício para desenvolvimento pessoal e estudos');
 
 function tocaSom (seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
