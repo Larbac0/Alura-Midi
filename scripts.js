@@ -1,7 +1,15 @@
 alert('Alura midi é um projeto fictício para desenvolvimento pessoal e estudos');
 
-function tocaSom (idElementoAudio) {
-    document.querySelector(idElementoAudio).play();
+function tocaSom (seletorAudio) {
+    const elemento = document.querySelector(seletorAudio);
+
+    if (elemento != null && elemento.localName === 'audio') {
+        elemento.play();
+    }
+    else {
+        //alert('Elemento não encontrado');
+        console.log('Elemento não encontrado');
+    }
 }
 
 const ListaDeTeclas = document.querySelectorAll('.tecla');
@@ -21,8 +29,12 @@ for (let contador = 0; contador < ListaDeTeclas.length; contador++) {
        tocaSom(idAudio);
     }
 
-    tecla.onkeydown = function () {
+    tecla.onkeydown = function (event) {
+
+        if (event.code === 'Space' || event.code === 'Enter') {
         tecla.classList.add('ativa');
+        }
+        
     }
 
     tecla.onkeyup = function () {
