@@ -41,3 +41,12 @@ for (let contador = 0; contador < ListaDeTeclas.length; contador++) {
         tecla.classList.remove('ativa');
     }
 }
+
+document.getElementById('infoBtn').addEventListener('click', function() {
+    var balloon = document.getElementById('infoBalloon');
+    if (balloon.style.display === 'none' || balloon.style.display === '') {
+        balloon.style.display = 'block';
+    } else {
+        balloon.style.display = 'none';
+    }
+});
