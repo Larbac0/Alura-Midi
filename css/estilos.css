@@ -16,7 +16,7 @@
 .cabecalho{
   position: fixed;
   width: 100%;
-  background-color: #aaaaaa;
+  background-color: var(--branca);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +33,12 @@ main {
   min-height: 100vh;
 }
 
+.titulo__cabecalho{
+  color: var(--azul-principal);
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 h1 {
   color: var(--branca);
@@ -45,7 +51,12 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-right: 1rem;
-  color: var(--branca);
+  color: var(--azul-principal);
+}
+
+.link:hover{
+  color: var(--azul);
+  transition: linear;
 }
 
 .teclado {
@@ -102,6 +113,7 @@ h1 {
   bottom: 10px;
   right: 10px;
   text-align: center;
+  border-radius: 100%;
 }
 
 #infoBtn {
