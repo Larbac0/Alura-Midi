@@ -1,0 +1,1 @@
+SoftWave Teclados é um projeto com base no projeto Alura midi do curso de JavaScript da Alura. Neste projeto foram realizadas diversas modificações do projeto original, trazendo novas funcionalidades e aparência para uma possível utilização do projeto e para desenvolvimento pessoal.
